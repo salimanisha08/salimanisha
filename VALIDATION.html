@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<head>
+<title> FORM VALIDATION</title>
+</head>
+<style>
+h1,p{
+color:rgb(233, 22, 138);
+}
+</style>
+<body>
+<center>
+<h1>THE CONTENTS OF THE FORM USING JAVASCRIPT</h1>
+</center>
+Enter the number : <input id="first"><br><br>
+<button type="button" onclick="myFunction()">Submit</button>
+<p id ="demo"></p>
+<script src="sam.js"></script>
+</body>
+function myFunction() {
+    let x = document.getElementById("first").value;
+    let a;
+    if (isNaN(x) || x < 1 || x > 100) {
+    a = "Input not valid";
+    } else {
+    a = "Input valid";
+    }
+    document.getElementById("demo").innerHTML
